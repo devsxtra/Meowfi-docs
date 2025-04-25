@@ -1,0 +1,20 @@
+{
+  "title": "Alloc8 Docs",
+  "description": "Documentation for Alloc8: A smart account-based delegation protocol enabling secure human or agent execution on DeFi strategies.",
+  "author": "Alloc8 Labs",
+  "language": "en",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "plugins": ["anchor-navigation-ex", "edit-link", "prism", "github"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/alloc8-labs/alloc8-docs/edit/main",
+      "label": "Edit this page"
+    },
+    "github": {
+      "url": "https://github.com/alloc8-labs/alloc8-docs"
+    }
+  }
+}
