@@ -28,7 +28,7 @@
 
 ## 🔗 Architecture Overview
 
-```mermaid
+mermaid
 sequenceDiagram
     participant EOA
     participant Alloc8Account
