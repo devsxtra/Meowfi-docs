@@ -1,12 +1,12 @@
-# 🔒 Security
+# Security
 
 ## Safeguards
 
-- ✅ ERC-4337 compliant
-- ✅ TWAP protection
-- ✅ ReentrancyGuard
-- ✅ Pausable
-- ✅ AccessControl (Admin vs Default)
+* ✅ ERC-4337 compliant
+* ✅ TWAP protection
+* ✅ ReentrancyGuard
+* ✅ Pausable
+* ✅ AccessControl (Admin vs Default)
 
 ## Audits
 

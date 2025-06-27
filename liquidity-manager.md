@@ -1,14 +1,14 @@
-# 💧 Liquidity Manager
+# Liquidity Manager
 
 Deployed via `CamelotLiquidityFactory`, this manages LP NFTs on Camelot V3.
 
 ## Actions
 
-- `mintLiquidity()`
-- `increaseLiquidity()`
-- `rebalanceLiquidity()`
-- `burnLiquidity()`
-- `collectFees()`
+* `mintLiquidity()`
+* `increaseLiquidity()`
+* `rebalanceLiquidity()`
+* `burnLiquidity()`
+* `collectFees()`
 
 ## Mainnet Camelot Pool Manager
 

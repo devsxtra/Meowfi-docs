@@ -1,13 +1,13 @@
-# 🔐 Smart Accounts
+# Smart Accounts
 
 Deployed via `Modular4337Factory`, each user gets a smart wallet compatible with ERC-4337.
 
 ## Features
 
-- Signature validation (ERC-1271)
-- Supports modules (e.g. agents, policies)
-- Safe fallback to owner EOA
-- Direct `execute` and `executeBatch`
+* Signature validation (ERC-1271)
+* Supports modules (e.g. agents, policies)
+* Safe fallback to owner EOA
+* Direct `execute` and `executeBatch`
 
 ## Factory Address (Arbitrum)
 
