@@ -27,7 +27,7 @@
 ---
 
 ## 🔗 Architecture Overview
-
+```
 mermaid
 sequenceDiagram
     participant EOA
