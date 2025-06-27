@@ -1,4 +1,4 @@
-# ![cropped_alloc8 transparent](https://github.com/user-attachments/assets/7f79c33a-0cf2-4eec-bfbb-d0e266621837)
+# ![Alloc8 Logo](https://github.com/user-attachments/assets/7f79c33a-0cf2-4eec-bfbb-d0e266621837)
 
 **Alloc8** is an agentic asset allocation protocol enabling programmable delegation of funds through smart accounts. Whether you're a DAO automating treasury strategies, a yield optimizer seeking abstraction, or an LP aiming for passive yield, Alloc8 provides execution autonomy without sacrificing custody.
 
@@ -27,6 +27,7 @@
 ---
 
 ## 🔗 Architecture Overview
+
 ```mermaid
 sequenceDiagram
     participant EOA
@@ -46,6 +47,4 @@ sequenceDiagram
     Alloc8PositionManager->>UniswapV3: burn old position, mint new one
     MeowAgent->>AlchemyBundler: submit rebalance operation (validateUserOp)
     AlchemyBundler->>EntryPoint: handleOps()
-    EntryPoint->>Alloc8Account: Rebalance Position        
-
-
+    EntryPoint->>Alloc8Account: Rebalance Position
