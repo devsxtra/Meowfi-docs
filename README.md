@@ -4,19 +4,19 @@
 
 ***
 
-## 🧠 Core Features
+## Core Features
 
-* 🔐 **ERC-4337 Smart Accounts**\
+*  **ERC-4337 Smart Accounts**\
   Fully modular, upgradeable accounts with session-key policies and permissioned delegation.
-* 🧬 **MEOW Agents**\
+*  **MEOW Agents**\
   Autonomous strategies that manage LP positions (e.g., Uniswap V3, Camelot) using encoded execution policies and real-time signals.
-* 🧑‍💼 **Human Portfolio Manager Support**\
+*  **Human Portfolio Manager Support**\
   Allow trusted managers to execute trades or rebalance vaults on behalf of wallet owners.
-* 🛡 **Policy-Based Execution**\
+*  **Policy-Based Execution**\
   Fine-grained access control for targets, selectors, gas limits, value bounds, and receivers.
-* 📈 **AI-Generated Ticks**\
+*  **AI-Generated Ticks**\
   Optional integration of LLM-based models to determine Uniswap V3 range positions dynamically.
-* 🌉 **Arbitrum-native**\
+*  **Arbitrum-native**\
   Deploys and runs on Arbitrum with full bundler compatibility (Alchemy, Stackup, etc).
 
 ***
