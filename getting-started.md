@@ -1,11 +1,6 @@
----
-description: >-
-  Your gateway to Intelligent DeFi, powered by Alloc8. In just a few steps, you
-  can connect your wallet, set up your agent, and start exploring smart yield
-  strategies - all while staying in control.
----
-
 # Getting Started
+
+Your gateway to Intelligent DeFi, powered by Alloc8. In just a few steps, you can connect your wallet, set up your agent, and start exploring smart yield strategies - all while staying in control.
 
 1. **Connect your wallet** and enter your invite code (if required).
 2. **Type a prompt** (e.g., Show best ARB pools) to find top strategies.
