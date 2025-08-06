@@ -4,63 +4,57 @@ description: Agent to calculate the upper and lower tick to place the liquidity 
 
 # Meow Agent
 
-### Dynamic Tick Placement & Rebalancing Intelligence
+### Dynamic Tick Placement & Agentic Rebalancing
 
-**Meow Agent** is an autonomous strategy module that intelligently manages concentrated liquidity positions by:
+The **Meow Agent** is an autonomous strategy module that uses real-time market data to manage concentrated liquidity positions. It:
 
-* **Analysing pool conditions and volatility**
-* **Computing optimal tick ranges for entry**
-* **Deciding when to rebalance or rotate capital**
+* Analyzes pool conditions and volatility
+* Calculates optimal tick ranges
+* Decides when to rebalance or rotate capital
 
-Designed for use with **Camelot V3**, **Uniswap V3**, and other Algebra-based AMMs, this agent enables market makers and DAOs to **maximise capital efficiency** while maintaining tight control over risk and gas costs.
+Designed for **Camelot V3**, **Uniswap V3**, and other **Algebra-based AMMs**, it helps market makers and DAOs maximize capital efficiency while controlling risk and gas costs.
 
 ***
 
 #### What It Does
 
 **Dynamic Tick Discovery**\
-Continuously evaluates pool state (price, TWAP, liquidity depth, volatility) and calculates the optimal lower/upper ticks to deploy liquidity for a given capital allocation.
+Continuously scans pool state (price, TWAP, liquidity depth, volatility) to set the best lower/upper ticks for liquidity deployment.
 
-**Rebalance Signalling**\
-Monitors position drift, impermanent loss, and pool movement. If a position has moved outside of its optimal range or becomes inefficient, the agent emits a **rebalance trigger** — allowing automatic or manual repositioning.
+**Rebalance Signaling**\
+Tracks position drift and inefficiency. Triggers rebalance signals when liquidity moves out of its optimal range or performance declines.
 
 **Volatility-Aware Adjustments**\
-Uses TWAP deviation, tick skew, and recent volatility bands to **avoid deploying during unstable market phases**.
+Avoids rebalancing during unstable market phases using TWAP deviation, tick skew, and volatility bands.
 
 **Capital-Aware Deployment**\
-Takes into account slippage, token ratio, and min/max capital bounds to place liquidity where it earns the highest fees relative to risk.
+Places liquidity where it earns the highest fees for the given risk, factoring in slippage, token ratios, and capital limits.
 
 ***
 
 #### Use Cases
 
-* **Protocol-Owned Liquidity (POL)** — Manage DAO-owned liquidity adaptively and securely.
-* **Automated LP Bots** — Plug into vaults or keepers to trigger on-chain `mint` or `burn`.
-* **Retail Vaults** — Optimise liquidity deployment for passive users.
-* **Strategy Builders** — Use as a plug-in module for more complex market-making strategies.
+* **Protocol-Owned Liquidity (POL)** – Adaptive, policy-driven DAO liquidity management
+* **Automated LP Bots** – Trigger on-chain mints/burns via vaults or keepers
+* **Retail Vaults** – Optimize liquidity for passive LP users
+* **Strategy Builders** – Plug-in module for advanced market-making
 
 ***
 
 #### Sample Workflow
 
-1. **Price Monitoring**\
-   Agent fetches pool state: current tick, sqrtPrice, liquidity distribution.
-2. **Tick Computation**\
-   Using volatility, TWAP, and strategy parameters, it selects optimal `lowerTick` and `upperTick`.
-3. **Rebalance Evaluation**
-   * Checks if the existing position is out of range(here, the range is a little smaller than the overall range of the position, as we would want to rebalance if the position reaches near the border)
-   * Assesses fee performance vs capital at risk
-   * Signals rebalance if deviation exceeds the threshold
-4. **Execution Path (Optional)**\
-   Meow Agent can be paired with an executor that:
-   * Burns old position
-   * Mints new liquidity
-   * Routes fees to treasury
+1. **Price Monitoring** – Fetch current tick, sqrtPrice, liquidity distribution
+2. **Tick Computation** – Use volatility, TWAP, and strategy rules to select an optimal range
+3. **Rebalance Evaluation** – Check range boundaries, fee performance, and capital at risk
+4. **Signal Trigger** – If deviation exceeds threshold, emit a rebalance signal
+5. **Execution (Optional)** – Executor burns old position, mints new liquidity, routes fees to treasury
 
 ***
 
 #### Security-First Design
 
-* Compatible with TWAP-based volatility guards (like `onlyCalmPeriods`)
-* Supports capital bounds, slippage checks, and time-locks
-* Designed to avoid rebalances during oracle lags or flash crashes
+* Works with TWAP-based volatility guards (e.g., _onlyCalmPeriods_)
+* Enforces capital bounds, slippage limits, and time-locks
+* Avoids rebalancing during oracle lags or flash crashes
+
+**In short:** Meow Agents keep your liquidity in the most profitable range - automatically, intelligently, and without giving up custody.

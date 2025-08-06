@@ -1,13 +1,20 @@
+---
+description: >-
+  Your gateway to Intelligent DeFi, powered by Alloc8. In just a few steps, you
+  can connect your wallet, set up your agent, and start exploring smart yield
+  strategies - all while staying in control.
+---
+
 # Getting Started
 
-## For Users
+1. **Connect your wallet** and enter your invite code (if required).
+2. **Type a prompt** (e.g., Show best ARB pools) to find top strategies.
+3. **First-time users** will need to:
+   1. Create a Smart Wallet
+   2. Activate your Agent
+4. **Pick a strategy** and click **Deposit**.
+5. **Enter the amount** and confirm your deposit.
 
-1. Connect your wallet
-2. Deploy an Alloc8 Smart Wallet
-3. Choose an agent or portfolio manager
-4. Set your strategy rules (risk, limits)
-5. Delegate funds and monitor performance
 
-## For Developers
 
-You can integrate Alloc8 contracts into your dApp, automate wallet deployments, and execute rebalance logic via MEOW SDK or raw ABI calls.
+**Note:** Once you deposit successfully, Alloc8 works behind the scenes to keep your liquidity in the optimal range, earning fees and compounding yield automatically — so your capital is always working harder for you.

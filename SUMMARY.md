@@ -6,6 +6,7 @@
 
 ## Architechure
 
+* [Architecture Overview](architechure/readme.md)
 * [Modular Smart Accounts](architechure/modular-smart-accounts.md)
 * [Account Factory](architechure/account-factory.md)
 * [Policy Module](architechure/policy-module.md)
@@ -14,12 +15,13 @@
 ## MEOW Agents
 
 * [Meow Agent](meow-agents/meow-agent.md)
-
-***
-
-* [Case Studies](case-studies.md)
+* [Case Studies](meow-agents/case-studies.md)
 
 ## Resources
 
 * [Deployment Addresses](resources/deployment-addresses.md)
-* [Useful Links](resources/useful-links.md)
+
+***
+
+* [Website](https://meowfi.alloc8.xyz/)
+* [Twitter](https://x.com/alloc8_xyz)
