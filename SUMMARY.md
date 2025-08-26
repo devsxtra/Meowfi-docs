@@ -14,7 +14,7 @@
 
 ## MEOW Agents
 
-* [Meow Agent](meow-agents/meow-agent.md)
+* [Alloc8 Agent](meow-agents/alloc8-agent.md)
 * [Case Studies](meow-agents/case-studies.md)
 
 ## Resources
