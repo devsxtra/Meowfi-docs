@@ -6,8 +6,6 @@ The `Modular4337Factory` is a fully on-chain, deterministic factory contract use
 
 * **Deterministic Wallet Addresses**\
   Every smart account is deployed using `CREATE2` with a per-user salt and nonce combination, allowing you to predict the address **before** deployment.
-* **Per-User Account Caps**\
-  Enforces a maximum number of wallets each user can deploy (default: 5), adjustable by the contract owner.
 * **Proxy Pattern**\
   All accounts are proxies pointing to a shared `Modular4337Account` implementation, minimizing deployment gas costs.
 * **Vault Whitelist Registry**\

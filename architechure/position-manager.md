@@ -22,11 +22,6 @@ It inherits core functionality from `BasePositionManager` and adds direct integr
 * Automatically deducts protocol treasury fees on `collectFees()` and `burnLiquidity()` using `_collectLogic()`.
 * Treasury address and fee 3% (in basis points) can be configured and updated by admins.
 
-**Volatility Guard (TWAP-Based)**
-
-* All mint and increase operations are guarded by `onlyCalmPeriods` which checks if current tick is within a safe deviation from TWAP.
-* Admins can update deviation thresholds and TWAP interval.
-
 ***
 
 #### Core Functions
@@ -87,7 +82,7 @@ Admin-only method to update:
 #### Internal Design Notes
 
 * **Caching**: `currentState()` caches tick/price info for 60 seconds to optimize gas across frequent liquidity actions.
-* **Volatility Guard**: `_isCalm()` calculates deviation from TWAP and ensures tick stability.
+* **Volatility Guard**: all transactions require minimum amounts according to the slippage required.
 * **Composability**: Designed to be extended for specific pool integrations via `BasePositionManager`.
 
 

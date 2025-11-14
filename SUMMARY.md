@@ -9,7 +9,7 @@
 * [Architecture Overview](architechure/readme.md)
 * [Modular Smart Accounts](architechure/modular-smart-accounts.md)
 * [Account Factory](architechure/account-factory.md)
-* [Policy Module](architechure/policy-module.md)
+* [Global Session Policy Module](architechure/global-session-policy-module.md)
 * [Position Manager](architechure/position-manager.md)
 
 ## MEOW Agents

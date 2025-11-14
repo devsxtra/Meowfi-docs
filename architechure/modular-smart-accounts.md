@@ -4,7 +4,7 @@ description: Alloc8 Smart Accounts
 
 # Modular Smart Accounts
 
-Alloc8’s smart accounts are built on top of the **ERC-4337 account abstraction standard**, extended with **ERC-6900 modularity**. At the core is the `Modular4337Account` — a **highly composable**, **upgrade-friendly**, and **developer-extensible** smart wallet contract.
+Alloc8’s smart accounts are built on top of the **ERC-4337 account abstraction standard**, extended with **modularity**. At the core is the `Modular4337Account` — a **highly composable**, **upgrade-friendly**, and **developer-extensible** smart wallet contract.
 
 At the center is the **Modular4337Account**: a smart wallet that supports plug-and-play modules for custom logic, without ever changing the core contract. Using a **hook-based architecture**, developers can add validation rules, execution logic, policy enforcement, fee routing, and more — safely and flexibly.
 

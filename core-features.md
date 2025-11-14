@@ -9,7 +9,7 @@ Our protocol combines programmable smart accounts, policy-based execution, and r
 
 
 
-* **ERC-4337 Smart Accounts**\
+* **Smart Accounts**\
   Modular, upgradeable accounts with session-key rules and permission-based delegation. Your wallet can have custom rules and upgrades without losing security.
 * **MEOW Agents**\
   Autonomous strategies that manage LP positions (e.g., Uniswap V3, Camelot) using set policies and real-time market signals. Automated agents keep your liquidity in the best range to earn more.
