@@ -24,5 +24,5 @@
 ***
 
 * [Website](https://meowfi.alloc8.xyz/)
-* [Twitter](https://x.com/alloc8_xyz)
+* [X / Twitter](https://x.com/alloc8_xyz)
 * [Audits](https://github.com/devsxtra/Alloc8_Audits/blob/main/Trust%20Security%20Audit%20v1.pdf)
