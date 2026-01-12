@@ -3,20 +3,26 @@
 * [Overview](README.md)
 * [Core Features](core-features.md)
 * [Getting Started](getting-started.md)
+* [Glossary](glossary.md)
 
 ## Architechure
 
 * [Architecture Overview](architechure/readme.md)
 * [Modular Smart Accounts](architechure/modular-smart-accounts.md)
 * [Account Factory](architechure/account-factory.md)
-* [Global Session Policy Module](architechure/global-session-policy-module/README.md)
-  * [Oracle System](architechure/global-session-policy-module/oracle-system.md)
+* [Global Session Policy Module (GSPM)](architechure/global-session-policy-module-gspm/README.md)
+  * [Oracle System](architechure/global-session-policy-module-gspm/oracle-system.md)
 * [Position Manager](architechure/position-manager.md)
+* [DeFi Agent](architechure/defi-agent.md)
+* [Case Studies](architechure/case-studies.md)
 
-## MEOW Agents
+## Security
 
-* [Alloc8 Agent](meow-agents/alloc8-agent.md)
-* [Case Studies](meow-agents/case-studies.md)
+* [Security Model](security/security-model.md)
+* [Threat Model](security/threat-model.md)
+* [Risks & Limitations](security/risks-and-limitations.md)
+* [Vulnerability Disclosure](security/vulnerability-disclosure.md)
+* [Audits](https://github.com/devsxtra/Alloc8_Audits/blob/main/Trust%20Security%20Audit%20v1.pdf)
 
 ## Resources
 
@@ -24,6 +30,5 @@
 
 ***
 
-* [Website](https://meowfi.alloc8.xyz/)
+* [Website](https://www.alloc8.xyz/)
 * [X / Twitter](https://x.com/alloc8_xyz)
-* [Audits](https://github.com/devsxtra/Alloc8_Audits/blob/main/Trust%20Security%20Audit%20v1.pdf)

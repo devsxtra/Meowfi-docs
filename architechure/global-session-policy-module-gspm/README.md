@@ -1,4 +1,4 @@
-# Global Session Policy Module
+# Global Session Policy Module (GSPM)
 
 **What this is:** An ERC-6900–style validation & execution hook designed for **Modular4337Account**.\
 It follows the ERC-6900 hook pattern (install/uninstall + pre/post hooks) **using project-local interfaces** (`IValidationHookModule`, `IExecutionHookModule`) and enforces:
@@ -59,4 +59,4 @@ All functions below are **`onlyOwner`**:
 * `setPriceOracle(address _priceOracle)`\
   Updates the **oracle** used for USD valuations and skew checks (non-zero address).
 
-> ⚠️ Note: This module **does not fallback** to the owner’s signature. If a session key is invalid or missing, the operation will fail. It is explicitly designed for permissioned agent flows.
+> ⚠️ Note: GSPM is explicitly designed for permissioned agent flows. If a session key is invalid or missing, the operation fails (no fallback to the owner signature path).

@@ -10,4 +10,10 @@
 | UniswapV3PositionManagerFactory | 0xcAF327770d0ad7609E6931F2A0E5cb2f8ee0cfaF |
 | GlobalSessionPolicyModule       | 0xDc40bD4Ce436106658871D22d60A4e4418BDe8E9 |
 
-> Audits:-   [Trust Security Audit](https://github.com/devsxtra/Alloc8_Audits/blob/main/Trust%20Security%20Audit%20v1.pdf)
+> Audits :-   [Trust Security Audit](https://github.com/devsxtra/Alloc8_Audits/blob/main/Trust%20Security%20Audit%20v1.pdf)
+
+#### Verification guidance
+
+* Verify contract addresses on an official block explorer.
+* Confirm the UI is referencing these same addresses.
+* Treat address mismatches as a high-risk indicator.

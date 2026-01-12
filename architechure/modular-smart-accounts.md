@@ -34,5 +34,3 @@ Unlike fixed-function smart wallets, `Modular4337Account` it lets you compose wa
 * You don’t need to deploy new contracts to add new capabilities/features to the wallet.
 * You can progressively add features like **social recovery**, **role-based access**, **ERC20 spending caps**, or **session delegation**.
 * Modules are auditable, reusable, and independently testable.
-
-**This is the programmable core of Alloc8 wallets -** enabling AI-driven, policy-based execution and advanced DeFi strategies, while keeping full non-custodial control in the user’s hands.

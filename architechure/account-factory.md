@@ -2,7 +2,7 @@
 
 The `Modular4337Factory` is a fully on-chain, deterministic factory contract used to deploy modular smart accounts (`Modular4337Account`) via the CREATE2 opcode. It supports flexible account instantiation, vault registries, and optional integration with ERC-4337's EntryPoint staking model.
 
-**Key Features**
+#### **Key Features**
 
 * **Deterministic Wallet Addresses**\
   Every smart account is deployed using `CREATE2` with a per-user salt and nonce combination, allowing you to predict the address **before** deployment.
@@ -18,7 +18,7 @@ The `Modular4337Factory` is a fully on-chain, deterministic factory contract use
 * **EntryPoint Stake Utilities**\
   Supports `addStake`, `unlockStake`, and `withdrawStake` for ERC-4337 compliance and bundler staking.
 
-**Usage Flow**
+#### Typical usage flow
 
 1. **Compute Wallet Address:**\
    Use `computeAccountAddress(owner, salt)` to pre-calculate the address of the wallet.

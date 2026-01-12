@@ -1,14 +1,16 @@
 # Architecture Overview
 
-This architecture shows how Alloc8’s smart accounts and MEOW Agent work together to manage and rebalance Uniswap V3 liquidity. AI suggests optimal ranges, policies enforce safe execution, and all actions remain non-custodial and on-chain.
+Alloc8’s architecture connects modular smart accounts, Agents, and policy enforcement to manage and rebalance concentrated liquidity positions.
 
-* **Account Setup** – The EOA deploys and validates a modular Smart Account (Alloc8Account), installs modules, and creates a session.
-* **Strategy Input** – The SessionPolicyModule requests optimal tick ranges from the MEOW Agent, which uses AI signals to return the suggested range.
-* **Position Management** – The MEOW Agent deposits funds and mints a liquidity position.
-* **Ongoing Rebalancing** – The MEOW Agent submits rebalance operations, validated through policy rules.
-* **Execution Pipeline** – Transactions pass via the bundler and ERC-4337 EntryPoint to the Position Manager.
-* **Liquidity Update** – The Position Manager interacts with Uniswap V3 to burn old positions and mint new ones, keeping liquidity in the optimal range.
+#### High-level flow
 
-**Result:** Non-custodial, policy-based AI execution that continuously optimizes LP positions on-chain.
+1. **Account Setup**: EOA deploys and configures a Smart Account and installs modules.
+2. **Strategy Input**: The system requests optimal ranges from the Agent.
+3. **Position Management**: deposits mint LP positions via the Position Manager.
+4. **Rebalancing**: agent proposes operations; GSPM validates policy constraints.
+5. **Execution**: operations execute through ERC-4337 (bundler → EntryPoint).
+6. **Liquidity Update**: Position Manager burns/mints positions to update ranges.
+
+Result: non-custodial, policy-based execution for continuous LP optimization.
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-06-27 at 7.27.21 PM.png" alt=""><figcaption></figcaption></figure>

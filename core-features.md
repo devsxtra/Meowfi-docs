@@ -4,21 +4,34 @@ description: Why use Alloc8?
 
 # Core Features
 
-**Alloc8 is built for AI-powered, non-custodial asset management.**\
-Our protocol combines programmable smart accounts, policy-based execution, and real-time AI models to keep your capital optimized 24/7 - without giving up control.
+Alloc8 combines programmable smart accounts, policy-based execution, and MEOW Agents to automate liquidity management.
+
+#### Smart Accounts (modular ERC-4337)
+
+* Modular “plug-in” design: add/remove modules to introduce new logic without changing the account core.
+* Validation hooks for session keys and custom authorization.
+* Execution hooks to enforce allowlists, recipients, value limits, and other constraints.
+* ERC-1271 compatibility for contracts that expect signature validation.
+
+#### Policy-Based Execution (GSPM)
+
+GSPM enforces:
+
+* the bound session agent (authorized signer)
+* allowlists (agents and tokens)
+* recipient pinning (where proceeds can go)
+* per-transaction and rolling-window slippage budgets
+* pool↔oracle deviation constraints
+* tick-ratio sanity checks for liquidity operations
+
+#### DeFi Agents (strategy automation)
+
+Agents:
+
+* analyze pool state and volatility
+* compute upper/lower ticks for concentrated liquidity
+* decide when rebalancing is appropriate (including skipping unstable periods)
 
 
 
-* **Smart Accounts**\
-  Modular, upgradeable accounts with session-key rules and permission-based delegation. Your wallet can have custom rules and upgrades without losing security.
-* **MEOW Agents**\
-  Autonomous strategies that manage LP positions (e.g., Uniswap V3, Camelot) using set policies and real-time market signals. Automated agents keep your liquidity in the best range to earn more.
-* **Policy-Based Execution**\
-  Detailed access control over transaction targets, methods, gas limits, value limits, and recipients.\
-  You set exact rules for what your account can and can’t do.
-* **AI-Generated Ticks**\
-  Optional AI models to dynamically set Uniswap V3 range positions. Agents help adjust your liquidity positions automatically for better yield.
-
-**Alloc8 keeps your assets safe in your wallet while AI works to maximize performance.**\
-Every action is non-custodial, rule-based, and designed to make your capital work smarter — around the clock.
-
+Alloc8’s model is: autonomous execution gated by explicit, on-chain policy.
