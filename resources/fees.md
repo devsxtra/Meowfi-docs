@@ -9,7 +9,7 @@ If no yield is realized at the time of collection, **no performance fee is charg
 The performance fee is collected only when Alloc8 collects/compounds yield during:
 
 * **Rebalance execution**, or
-* **Autocompound execution** (runs **every Sunday at 7:00 PM UTC**)
+* **Autocompound execution** (runs every Sunday at 7:00 PM UTC)
 
 #### Example
 
