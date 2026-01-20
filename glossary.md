@@ -12,3 +12,5 @@
 * **MEOW Agent**: Strategy module computing tick ranges and rebalance signals.
 * **Slippage budget**: Allowed value loss over a rolling window, enforced on-chain.
 * **Recipient pinning**: Enforcement that proceeds go only to the account or owner.
+* **Performance fee**: A protocol fee charged on realized fees/yield, collected at rebalance or autocompound events.\
+  **Autocompound**: A scheduled process that realizes and reinvests fees/yield back into the position (runs weekly).

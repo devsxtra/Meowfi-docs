@@ -27,6 +27,7 @@
 ## Resources
 
 * [Deployment Addresses](resources/deployment-addresses.md)
+* [Fees](resources/fees.md)
 
 ***
 

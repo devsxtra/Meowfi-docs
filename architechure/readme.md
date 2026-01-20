@@ -11,6 +11,8 @@ Alloc8’s architecture connects modular smart accounts, Agents, and policy enfo
 5. **Execution**: operations execute through ERC-4337 (bundler → EntryPoint).
 6. **Liquidity Update**: Position Manager burns/mints positions to update ranges.
 
+During rebalance/autocompound actions, realized fees/yield may be collected, and the protocol performance fee is applied to the generated yield amount.
+
 Result: non-custodial, policy-based execution for continuous LP optimization.
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-06-27 at 7.27.21 PM.png" alt=""><figcaption></figcaption></figure>
