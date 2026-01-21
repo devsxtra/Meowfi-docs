@@ -9,7 +9,7 @@
 * **Session**: A time/permission-bounded authorization for an agent to act on your behalf.
 * **GSPM**: Global Session Policy Module; policy firewall for agent execution.
 * **Position Manager**: Liquidity manager for NFT-based concentrated liquidity positions.
-* **MEOW Agent**: Strategy module computing tick ranges and rebalance signals.
+* **DeFi Agent**: Strategy module computing tick ranges and rebalance signals.
 * **Slippage budget**: Allowed value loss over a rolling window, enforced on-chain.
 * **Recipient pinning**: Enforcement that proceeds go only to the account or owner.
 * **Performance fee**: A protocol fee charged on realized fees/yield, collected at rebalance or autocompound events.\
