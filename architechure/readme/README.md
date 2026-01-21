@@ -15,4 +15,4 @@ During rebalance/autocompound actions, realized fees/yield may be collected, and
 
 Result: non-custodial, policy-based execution for continuous LP optimization.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-06-27 at 7.27.21 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-06-27 at 7.27.21 PM.png" alt=""><figcaption></figcaption></figure>
